@@ -1,0 +1,581 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  color: #2b2b2b;
+  background-color: #fff;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  background: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+}
+
+.navbar .logo {
+  font-weight: 800;
+  font-size: 24px;
+}
+
+.nav-links a, .signup-btn {
+  margin-left: 1.5rem;
+  text-decoration: none;
+  color: #2b2b2b;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover, .signup-btn:hover {
+  color: #f66b0e;
+}
+
+.signup-btn {
+  padding: 0.5rem 1rem;
+  background-color: coral;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #f9f9ff, #ffffff);
+  animation: fadeIn 1s ease-in;
+}
+.hero-text h2{
+  color:coral;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  line-height: 1.2;
+}
+
+.sublinhado {
+  text-decoration:underline;
+  text-decoration-color:coral;
+  text-decoration-thickness: 5px;
+}
+
+.hero-buttons {
+  margin-top: 1.5rem;
+}
+
+.orange-btn, .play-btn {
+  padding: 0.75rem 1.5rem;
+  margin-right: 1rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.orange-btn {
+  background-color: coral;
+  color: white;
+}
+
+.orange-btn:hover {
+  transform: scale(1.05);
+}
+
+.play-btn {
+background: none;
+  color: white;
+  background-color:coral;
+  border: 2px solid coral; 
+  border-radius:999px;
+  
+}
+
+.play-btn:hover {
+  background-color:#f66b0e;
+  color: white;
+}
+
+.hero-img img {
+  max-width: 450px;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+.category{
+  margin:0;
+  padding: 1rem 2rem;
+    text-align:center;
+}
+.services{
+  margin:5px 0 0 0;
+}
+.destinations, .steps, .testimonials {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+.destination-cards{
+  display:flex;
+  justify-content:flex-start;
+  gap:3rem;
+  margin-top:2rem;
+  flex-wrap: nowrap;
+  padding-bottom:1rem;
+}
+
+.service-cards {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+ .l{
+    height: 6rem;
+    width: 5rem;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: auto;
+}
+.card{
+  background: #fefefe;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+.destination{
+  width:200px;
+ background: #fefefe;
+  border-radius: 22px;
+  padding: 1.5rem;
+  box-shadow: 0 6px 40px rgba(0, 0, 0, 0.05); 
+  transition: transform 0.3s ease;
+  text-align:left;
+}
+.destination img{
+  width:100%;
+  height:160px;
+  border-radius:15px;
+  display:block;
+}
+.destination h3 {
+  margin:0.5rem 0 0.25rem 0;
+  font-size:18px;
+  
+ 
+}
+.destination .prince{
+  color:coral;
+  font-weight:bold;
+  margin-bottom:0.5rem;
+}
+.destination p{
+  font-size:14px;
+  color:gray;
+  margin:0;
+  
+}
+
+.card:hover, .destination:hover {
+  transform: translateY(-10px);
+}
+
+.card.active {
+  border-bottom: 4px solid #f66b0e;
+  
+}
+
+.trip-section{
+  display: flex;
+  justify-content:space-between;
+  align-items:flex-start;
+  padding: 4rem 2rem;
+  gap:3rem;
+}
+.steps{
+  flex:1;
+  padding:4rem 2rem;
+  text-align:left;
+  
+}
+.steps ol {
+  list-style: none;
+  padding-left: 0;
+ text-align:left;
+  margin-left:0;
+  margin-top: 2rem;
+}
+
+.steps li {
+  display:block;
+  align-items:flex-start;
+  gap: 1rem;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  transition: color 0.3s;
+}
+
+.steps li:hover {
+  color: #f66b0e;
+}
+.steps li h6 {
+  margin:0.4rem 0 0;
+  font-size: 0.9rem;
+  color:black;
+  font-weight:normal;
+  line-height:1.4;
+}
+  .trip-card {
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  padding: 1rem;
+  max-width: 300px;
+  position: relative;
+}
+.trip-card img{
+  width:100%;
+  height:auto;
+  border-radius: 1rem;
+  object-fit: cover;
+  
+}
+.trip-info{
+  padding-top:1rem;
+}
+.trip-info h4{
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight:bold;
+  
+} 
+.trip-info p{
+  font-size: 0.9rem;
+  color:#555;
+  margin:0.3rem 0;
+}
+.ongoing-card{
+  
+  background:#fff;
+  boder-radius:1rem;
+  padding: 0.8rem 1rem;
+  box-shadow:0 0 10px rgba(0,0,0,0.1);
+  width:180px;
+}
+.ongoing-title{
+  font-size:0.7rem;
+  color:#999;
+    margin:0;
+}
+.trip-name{
+  font-weight:bold;
+  font-size:0.9rem;
+  margin:0.2rem 0;
+}
+.progress-bar{
+  width:100%;
+  height:6px;
+  background:#eee;
+  boder-radius: 4px;
+  margin-top:0.5rem;
+}
+.progress{
+  height: 100%;
+  background-color:#3f87f5
+}
+
+
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.footer {
+  background:#F5F5F5;
+  padding: 4rem 2rem;
+  text-align: center;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+}
+
+.newsletter-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.newsletter-text {
+  font-size: 1.2rem;
+  color: #1e1e1e;
+  margin-bottom: 1.5rem;
+}
+
+.subscribe {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.subscribe input {
+  padding: 0.75rem 1rem;
+  width: 250px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.subscribe button {
+  padding: 0.75rem 1.5rem;
+  background-color: coral;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+  font-weight: bold;
+}
+
+.subscribe button:hover {
+  background-color: #d95600;
+}
+@keyframes slideInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.category, .services {
+  animation: slideInUp 1s ease-in-out both;
+}
+
+.service-cards .card:nth-child(1) {
+  animation: slideInLeft 1s ease forwards;
+}
+
+.service-cards .card:nth-child(2) {
+  animation: fadeInUp 1.2s ease forwards;
+}
+
+.service-cards .card:nth-child(3) {
+  animation: fadeInUp 1.4s ease forwards;
+}
+
+.service-cards .card:nth-child(4) {
+  animation: slideInRight 1.6s ease forwards;
+}
+
+.destinations {
+  animation: fadeInUp 1s ease-in-out both;
+}
+
+.destination-cards .destination:nth-child(1) {
+  animation: slideInLeft 1s ease both;
+}
+
+.destination-cards .destination:nth-child(2) {
+  animation: fadeInUp 1.2s ease both;
+}
+
+.destination-cards .destination:nth-child(3) {
+  animation: slideInRight 1.4s ease both;
+}
+
+.trip-section {
+  animation: fadeInUp 1.2s ease-in-out both;
+}
+
+.steps, .trip-card {
+  animation: slideInUp 1.4s ease both;
+}
+
+.footer {
+  animation: fadeInUp 1.5s ease-in-out both;
+}
+
+.card, .destination, .trip-card, .subscribe button {
+  transition: all 0.4s ease;
+}
+
+.card:hover, .destination:hover, .trip-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+}
+
+@media (max-width: 1200px) {
+  .trip-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .steps {
+    padding: 2rem 1rem;
+  }
+
+  .trip-card {
+    max-width: 90%;
+  }
+
+  .destination-cards {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .destination {
+    width: 250px;
+  }
+}
+
+@media (max-width: 992px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem 1rem;
+  }
+
+  .hero-img img {
+    max-width: 100%;
+    margin-top: 2rem;
+  }
+
+  .service-cards {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .card {
+    width: 250px;
+  }
+
+  .trip-section {
+    padding: 2rem 1rem;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 1rem;
+  }
+
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+
+  .hero-text h2 {
+    font-size: 1.2rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .trip-section {
+    gap: 2rem;
+  }
+
+  .steps ol {
+    padding-left: 1rem;
+  }
+
+  .subscribe {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .subscribe input {
+    width: 100%;
+  }
+
+  .subscribe button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .destination-cards, .service-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card, .destination {
+    width: 90%;
+  }
+
+  .newsletter-text {
+    font-size: 1rem;
+  }
+
+  .navbar .logo {
+    font-size: 20px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .nav-links a, .signup-btn, select {
+    margin-left: 0;
+    margin-bottom: 0.5rem;
+  }
+}
